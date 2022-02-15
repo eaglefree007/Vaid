@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "open sans";
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  /* line-spacing: 65; */
+}
+
+.logo_side {
+  width: 40vw;
+}
+
+.logo {
+  height: 33%;
+  width: auto;
+}
+
+.logo,
+.profile-pic {
+  height: 40px;
+  width: auto;
+}
+
+.logo img,
+.profile-pic img {
+  height: 62.5%;
+  width: 100%;
+}
+
+.main-top-pic img {
+  width: 100vw;
+  height: auto;
+}
+
+.places {
+  height: 36px;
+}
+
+.search-input {
+  height: 100%;
+  width: 30vw;
+  background-color: #fff;
+}
+
+input {
+  height: 5vh;
+  width: 25vw;
+  border: none;
+}
+
+svg {
+  height: 3.7vh;
+  color: #1A54B0;
+}
+
+.img-text {
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.services-cards {
+  width: 90vw;
+}
+
+h3 {
+  font: normal normal bold 36px/49px Open Sans;
+}
+
+.card {
+  width: 27vw;
+  height: 23vh;
+  text-align: center;
+  margin: auto;
+  border-radius: 6px;
+  border: transparent;
+  background-color: transparent;
+  top: 9%;
+  /* padding: 2%; */
+
+}
+
+.card-title {
+  font: normal normal bold 28px "Open Sans";
+}
+
+.button {
+  font: normal normal bold 14px "Open Sans";
+}
+
+.card-1 {
+  background-color: #A485BE;
+}
+
+.card-2 {
+  background-color: #89CCAB;
+}
+
+.card-3 {
+  background-color: #F79384;
+}
+
+p {
+  font: normal normal normal 18px "Open Sans";
+  color: #666666;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.specs_pic {
+  width: 98%;
+  height: 100%;
+}
+
+.specs_pic img {
+  width: 100%;
+}
+
+h4 {
+  color: #1A54B0;
+  font: 700 18px;
+}
+
+.h-i-w {
+  height: 110px;
+}
+
+.h-i-w-card .card h4 {
+  color: black;
+  font: normal normal bold 20px/27px Open Sans;
+}
+
+.h-i-w-card .card p {
+  font: normal normal normal 16px/24px "Open Sans";
+}
+
+.h-i-w-card img {
+  height: 110px;
+}
+
+.profile-card {
+  height: 23.625rem;
+  width: 21.75rem;
+  border: 1px solid blue;
+  margin-bottom: 10rem;
+  display: block;
+}
+
+.top-pic {
+  height: 6.25rem;
+}
+
+.top-pic img {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+h5 {
+  font: normal normal bold 20px/24px Open Sans;
+}
+
+.dash {
+  width: 90%;
+  border: 0;
+  border-bottom: 2px dashed #ccc;
+}
+
+.stars svg {
+  height: 15px;
+  fill: #FFC437;
+}
+
+.bottom-data p {
+  font: normal 16px;
+}
