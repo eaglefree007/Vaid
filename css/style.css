@@ -1,24 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* :root {
-} */
-
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: "open sans";
-}
-
-h6::-webkit-scrollbar,
-.sb-hidden::-webkit-scrollbar {
-  display: none;
-}
-
-h6,
-.sb-hidden {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .nvg {
@@ -63,8 +49,7 @@ main {
 }
 
 .btn {
-  /* height: 1rem; */
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .places {
@@ -103,22 +88,12 @@ svg {
   color: #fff;
 }
 
-.service-card {
-  /* display: grid;  */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* height: 100%; */
-  /* max-width: 100%; */
-  /* /* gap: 20px; */
-}
-
-
 .services-cards {
   width: 90vw;
-  /* height: 4rem; */
 }
 
 h3 {
-  font: normal normal bold 36px/49px Open Sans;
+  font: normal normal bold 36px Open Sans;
 }
 
 .card-deck .card {
@@ -126,10 +101,7 @@ h3 {
 }
 
 .card {
-  /* width: 95%; */
-  /* height: auto; */
   text-align: center;
-  /* margin: auto; */
   border-radius: 6px;
   border: transparent;
   background-color: transparent;
@@ -210,12 +182,6 @@ h4 {
   width: 95%;
 }
 
-.profile-card {
-  height: 35rem;
-  width: 75rem;
-  display: block;
-}
-
 .top-pic {
   margin: auto !important
 }
@@ -233,7 +199,6 @@ h5 {
 
 .dash {
   padding: 0.5rem 0.5rem !important;
-  /* width: 90%; */
   border: 0;
   border-bottom: 2px dashed #ccc;
 }
@@ -334,11 +299,11 @@ hr,
 }
 
 #right-btn {
-  right: 3.5%;
+  right: 4.5%;
 }
 
 #left-btn {
-  left: 3.5%;
+  left: 4.5%;
 }
 
 .arrow {
@@ -393,10 +358,6 @@ li img {
   width: 100vw;
 }
 
-.logo {
-  /* width: 80%; */
-}
-
 .redirects {
   width: 80%;
   height: auto;
@@ -427,8 +388,6 @@ li img {
   color: #000000;
   height: 22px;
   width: 22px;
-  /* top: 50%; */
-  /* left: 50%; */
   transform: translate(60%, 50%);
 }
 
@@ -454,135 +413,12 @@ a {
 .show {
   border-radius: 0;
   border-top: none;
-  /* display: none; */
   top: auto;
   right: 2rem;
-  /* margin: -4px 0 10px 0; */
   right: 0;
-  /* position: absolute; */
   width: auto;
-  /* z-index: 1000 !important; */
 }
 
-
-/* ******************************
- BELOW 1344px (smaller desktop)
- ********************************* */
-
-@media (max-width: 84em) {
-  #left-btn {
-    /* left: 8%; */
-  }
-
-  #right-btn {
-    /* right: 8%; */
-  }
-}
-
-
-
-/* ******************************
- BELOW 1200px (landscape tablet)
- ********************************* */
-
-@media (max-width: 75em) {}
-
-/* ******************************
- BELOW 944px (tablet)
- ********************************* */
-@media (max-width: 59em) {
-  .img-text {
-    width: 56rem;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-}
-
-/* ******************************
- BELOW 704px (smaller tablet)
- ********************************* */
-
-@media (max-width: 44em) {
-
-  .specs {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  .h-i-w-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .rating {
-    grid-template-columns: 1fr;
-  }
-
-  .availablities {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-  }
-
-  .logo-line {
-    display: block !important
-  }
-
-  .places {
-    height: 4rem;
-    font-size: 16px;
-    width: 70%;
-  }
-
-  .logo_side {
-    width: 90vw;
-  }
-
-  .logo-line {
-    display: block !important;
-  }
-
-
-}
-
-/* ******************************
- BELOW 544px (smaller tablet)
- ********************************* */
-
-@media (max-width: 34em) {
-  .img-text {
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 2.6rem;
-  }
-  .s-c{
-    width: 80%;
-  }
-  .mobile-redirects,
-  .social-media-redirects {
-    width: 100%;
-    justify-content: center !important;
-  }
-
-  .footer-nav {
-    width: 100%;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center !important;
-  }
-
-  .logo img {
-    display: block;
-    /* width: 80%; */
-  }
-  .dropdown label{
-    display: none;
-  }
+.redirects {
+  display: flex !important;
 }
