@@ -1,10 +1,32 @@
-h6::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main::-webkit-scrollbar,
 .sb-hidden::-webkit-scrollbar {
   display: none;
 }
 
-h6,
+body,
+main,
 .sb-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+button {
+  height: 3.7rem;
 }
