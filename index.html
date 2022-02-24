@@ -42,6 +42,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/queries.css">
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -57,25 +59,13 @@
 <body>
   <main class="sb-hidden">
 
-    <section class="container-fluid top-0 px-0">
+    <section class="nvg-main container-fluid fixed-top top-0 px-0">
       <div class="nvg d-flex justify-content-between align-items-center mx-auto">
         <div class="logo_side d-flex justify-content-between align-items-center mx-5">
           <img src="img/header/Group 2101 (1).svg" alt="">
-          <!-- <div class="dropdown d-flex align-items-center">
-            <label class="mb-0" for="language">Language</label>
-            <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-expanded="false">
-              English
-            </button>
-            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">French</a>
-              <a class="dropdown-item" href="#">German</a>
-              <a class="dropdown-item" href="#">Spanish</a>
-            </div>
-          </div> -->
           <div class="dropdown align-items-center d-flex justify-content-center ">
             <label for="language" class="m-0">Language</label>
-            <button class="btn btn-light dropdown-toggle m-3 px-4" type="button" id="dropdownMenuButton"
+            <button class="btn btn-light dropdown-toggle my-3 px-3 mx-2" type="button" id="dropdownMenuButton"
               data-toggle="dropdown" aria-expanded="false">English
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -88,16 +78,14 @@
 
         <div class="profile d-flex justify-content-between align-items-center mr-5">
           <div class="profile-pic"><img src="img/header/profile-pic.png" alt=""></div>
-          <div class="dropdown align-items-center d-flex justify-content-center">
-            <button class="btn dropdown-toggle m-3 px-4" type="button">English
-              <!-- <span class="caret"></span> -->
+          <div class="dropdown align-items-center d-flex justify-content-center  ml-2">
+            <button class="btn btn-light dropdown-toggle my-3 px-4" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-expanded="false">Alex samuel
             </button>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li class="divider"></li>
-              <li><a href="#">About Us</a></li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Friends</a></li>
+              <li><a class="dropdown-item" href="#">Setting</a></li>
             </ul>
           </div>
         </div>
@@ -108,11 +96,18 @@
       <div class="position-relative mb-3">
         <img src="img/main-page/main-top-pic.png" alt="">
         <div class="img-text position-absolute text-center align-item-center">
-          <h1 class="sb-hidden my-0 mx-auto pb-3">Introducing Video Consultations. Don’t delay your health concerns.
+          <h1 class="mx-auto mb-5 overflow-hidden">Introducing Video Consultations. Don’t delay your health concerns.
           </h1>
           <div class="places d-flex justify-content-center align-content-center mt-3 mx-auto">
-
-            <button class="btn btn-primary px-5 mx-3">Benguluru</button>
+            <div class="dropdown align-items-center d-flex justify-content-center text-center">
+              <button class="btn btn-primary dropdown-toggle  px-3 mx-3 text-center" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Benguluru</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Friends</a></li>
+                <li><a class="dropdown-item" href="#">Setting</a></li>
+              </ul>
+            </div>
             <div class="search-input d-flex rounded">
               <input type="text" placeholder="Search for a Speciality" class="my-auto ml-2" />
               <svg xmlns="http://www.w3.org/2000/svg" class="ionicon my-auto ml-0 mr-3" viewBox="0 0 512 512">
@@ -131,26 +126,26 @@
       <div class="services-cards container-fluid position-relative">
         <div class="container-fluid service-card">
           <h3 class="my-5">What are you looking for?</h3>
-          <div class="service-card sb-hidden card-deck mx-auto col-12">
+          <div class="service-card card-deck  mx-auto">
 
-            <div class="s-c card col-4 card-1 px-0 text-white justify-content-center">
-              <h5 class="s-c card-title">Doctor at Home</h5>
+            <div class="s-c card col-md-4 card-1 px-0 justify-content-center text-white  ">
+              <h5 class="s-c card-title mx-auto">Doctor at Home</h5>
               <p class="card-text">
-                <button type="button" class="btn btn-outline-light text-white btn-link">Book Now</button>
+                <button type="button" class="btn btn-outline-light btn-link">Book Now</button>
               </p>
             </div>
 
-            <div class="s-c card col-4 card-2 px-0 text-white justify-content-center">
-              <h5 class="card-title">Visit a Doctor</h5>
+            <div class="s-c card col-md-4 card-2 px-0 justify-content-center text-white ">
+              <h5 class="card-title mx-auto">Visit a Doctor</h5>
               <p class="card-text">
-                <button type="button" class="btn btn-outline-light text-white btn-link">Book Now</button>
+                <button type="button" class="btn btn-outline-light btn-link">Book Now</button>
               </p>
             </div>
 
-            <div class="s-c card col-4 card-3  px-0 text-white justify-content-center">
-              <h5 class="card-title">Tele Appointment</h5>
+            <div class="s-c card col-md-4 card-3  px-0 justify-content-center text-white ">
+              <h5 class="card-title mx-auto">Tele Appointment</h5>
               <p class="card-text">
-                <button type="button" class="btn btn-outline-light text-white">Book Now</button>
+                <button type="button" class="btn btn-outline-light btn-link">Book Now</button>
               </p>
             </div>
 
@@ -163,31 +158,31 @@
           <div class="specs pt-5">
             <div class="specs_pic">
               <img src="img/specs/pic_7.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Dermatologist</h4>
+              <label class="specs-data  pt-3">Dermatologist</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_4.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">General Physician</h4>
+              <label class="specs-data  pt-3">General Physician</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_2.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Psychiatrist</h4>
+              <label class="specs-data  pt-3">Psychiatrist</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_5.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Gynecologist</h4>
+              <label class="specs-data  pt-3">Gynecologist</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_6.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Endocrinologists</h4>
+              <label class="specs-data  pt-3">Endocrinologists</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_1.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Dentists</h4>
+              <label class="specs-data  pt-3">Dentists</label>
             </div>
             <div class="specs_pic">
               <img src="img/specs/pic_3.png" alt="">
-              <h4 class="specs-data sb-hidden pt-3">Neurologist</h4>
+              <label class="specs-data  pt-3">Neurologist</label>
             </div>
           </div>
         </div>
@@ -272,9 +267,9 @@
             </div>
           </div>
 
-          <div class="carousal-img d-flex position-relative justify-content-around sb-hidden">
-            <div class="profile-cards d-flex position-relative my-5 sb-hidden">
-              <div class=" card1 px-3 py-5 bg-light position-relative sb-hidden">
+          <div class="carousal-img d-flex position-relative justify-content-around overflow-hidden">
+            <div class="profile-cards d-flex my-5 ">
+              <div class=" card1 px-3 py-5 bg-light position-relative ">
 
                 <div class="top-pic d-flex justify-content-around m-2">
                   <img src="img/review/adult-beard-boy-casual-220453@2x.png" alt="">
@@ -321,7 +316,7 @@
                 </div>
               </div>
 
-              <div class=" card2 px-3 py-5 bg-light sb-hidden">
+              <div class=" card2 px-3 py-5 bg-light">
                 <div class="top-pic d-flex justify-content-around m-2">
                   <img src="img/review/adult-beard-boy-casual-220453@2x.png" alt="">
                   <div class="top-data">
@@ -367,7 +362,7 @@
                 </div>
               </div>
 
-              <div class=" card3 px-3 py-5 bg-light position-relative sb-hidden">
+              <div class=" card3 px-3 py-2 bg-light position-relative ">
 
                 <div class="top-pic d-flex justify-content-around m-2 ">
                   <img src="img/review/adult-beard-boy-casual-220453@2x.png" alt="">
@@ -413,6 +408,7 @@
                     dummy text ever since</p>
                 </div>
               </div>
+
               <div class="arrow position-absolute" id="left-btn">
                 <span class="glyphicon glyphicon-chevron-left" id="left"></span>
               </div>
@@ -440,7 +436,7 @@
         <ul>
           <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Aduja</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Amsterdam</li>
-          <li><img src="img/cities/arrow-forward-outline.svg" alt=""> auckland</li>
+          <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Auckland</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Beirut</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Benguluru</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt=""> Bogota</li>
@@ -473,11 +469,11 @@
         <ul>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Paris</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Paterson</li>
+          <li><img src="img/cities/arrow-forward-outline.svg" alt="">Port of Spain</li>
+          <li><img src="img/cities/arrow-forward-outline.svg" alt="">Pretoria</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Surat</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Sydney</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Toronto</li>
-          <li><img src="img/cities/arrow-forward-outline.svg" alt="">Port of Spain</li>
-          <li><img src="img/cities/arrow-forward-outline.svg" alt="">Pretoria</li>
           <li><img src="img/cities/arrow-forward-outline.svg" alt="">Istanbul</li>
         </ul>
       </div>
@@ -488,15 +484,15 @@
         <div class="logo my-3">
           <img src="img/footer/Group 2101 (2).svg" alt="">
         </div>
-        <div class="nav footer-nav justify-content-between align-text-center d-flex mx-auto my-5">
-          <h6>Privacy Policy</h6>
-          <h6>Terms & Conditions</h6>
-          <h6>About Us</h6>
-          <h6>Contact Us</h6>
-          <h6>Blog</h6>
+        <div class="nav footer-nav justify-content-between align-text-center d-flex mx-auto my-3">
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Blog</p>
         </div>
       </div>
-      <div class="redirects justify-content-between align-items-center mx-auto py-5 sb-hidden">
+      <div class="redirects justify-content-between align-items-center mx-auto py-3 sb-hidden">
         <div class="mobile-redirects d-flex mb-3">
           <img src="img/footer/appStore.svg" class="my-0 mx-2" alt="" />
           <img src="img/footer/playStore.svg" class="my-0 mx-2" alt="" />
@@ -513,8 +509,8 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright text-center  py-5">Copyright&nbsp;<a href="https://mdbootstrap.com/"> Vaid |
-          ef007</a>© 2020, All Rights Reserved
+      <div class="footer-copyright text-center  py-3">Copyright&nbsp;<a href="https://mdbootstrap.com/"> Vaid |
+          ef007</a>&nbsp;© 2020, All Rights Reserved
       </div>
     </section>
 
