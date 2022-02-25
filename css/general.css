@@ -30,3 +30,19 @@ html {
 button {
   height: 3.7rem;
 }
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:link,
+a:active {
+  color: black;
+}
+
+a:hover,
+a:visited {
+  text-decoration: none;
+}
