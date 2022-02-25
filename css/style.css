@@ -301,6 +301,7 @@ hr,
 }
 
 .c-btn {
+  content: " ";
   margin: 0 5px;
   height: 10px;
   width: 10px;
