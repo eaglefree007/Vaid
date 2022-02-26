@@ -1,0 +1,65 @@
+body::-webkit-scrollbar,
+main::-webkit-scrollbar,
+.sb-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+main,
+.sb-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+} */
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+button {
+  height: 3.7rem;
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+a:link,
+a:active {
+  cursor: pointer;
+  color: black;
+}
+
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+.footer-copyright a:link,
+.footer-copyright a:active {
+  color: white;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:visited {
+  color: #0056b3;
+}
+
+.open>.dropdown-menu {
+  display: none;
+}
