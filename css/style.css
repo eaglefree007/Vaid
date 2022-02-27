@@ -423,7 +423,7 @@ hr,
   width: 45px;
   background-color: #F0F0F0;
   border-radius: 50%;
-  z-index: 7777;
+  z-index: 1000;
   transform: translatey(12.5rem);
 }
 
